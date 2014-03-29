@@ -4,6 +4,12 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
+/**
+ * A classe <code>Janela</code> representa a tela principal da aplicação.
+ * 
+ * @author marco.mangan@pucrs.br
+ *
+ */
 public class Janela {
 
 	private JFrame frame;
@@ -39,8 +45,8 @@ public class Janela {
 		frame.setBounds(100, 100, 500, 500);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		painel = new PainelDesenho();
-        frame.getContentPane().add(painel);
-        frame.setVisible(true);
+		frame.getContentPane().add(painel);
+		frame.setVisible(true);
 	}
 
 }
