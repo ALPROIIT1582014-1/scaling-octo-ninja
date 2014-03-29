@@ -1,5 +1,8 @@
 /**
+ * A classe <code>FiguraGeometrica</code>
+ * 
  * @author Julio Machado, Marcelo Cohen
+ * @author marco.mangan@pucrs.br
  */
 package pucrs.alpro2;
 
@@ -7,26 +10,48 @@ import java.awt.Graphics2D;
 
 public abstract class FiguraGeometrica {
 
-    private double posX;
-    private double posY;
+	private double posX;
+	private double posY;
 
-    public FiguraGeometrica(double x, double y) {
-        posX = x;
-        posY = y;
-    }
-    
-    public abstract void desenhar(Graphics2D g);
+	/**
+	 * 
+	 * @param x
+	 * @param y
+	 */
+	public FiguraGeometrica(double x, double y) {
+		posX = x;
+		posY = y;
+	}
 
-    public double getPosX() {
-        return posX;
-    }
+	/**
+	 * 
+	 * @param g
+	 */
+	public abstract void desenhar(Graphics2D g);
 
-    public double getPosY() {
-        return posY;
-    }
+	/**
+	 * 
+	 * @return
+	 */
+	public double getPosX() {
+		return posX;
+	}
 
-    public void deslocar(double x, double y) {
-        posX += x;
-        posY += y;
-    }
+	/**
+	 * 
+	 * @return
+	 */
+	public double getPosY() {
+		return posY;
+	}
+
+	/**
+	 * 
+	 * @param x
+	 * @param y
+	 */
+	public void deslocar(double x, double y) {
+		posX += x;
+		posY += y;
+	}
 }
